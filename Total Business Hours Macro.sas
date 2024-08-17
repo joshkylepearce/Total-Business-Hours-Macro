@@ -76,10 +76,10 @@ Calculate the number of work hours between two datetime variables.
 Excludes weekends, public holidays, and non-business hours.
 
 Input Parameters:
-1.	input_data		- Input dataset that should be queried.
-2.	output_data		- Name of the output dataset.
-2. 	start_date		- Specify the start datetime variable.
-3.	end_date		- Specify the end datetime variable.
+1.	input_data	- Input dataset that should be queried.
+2.	output_data	- Name of the output dataset.
+2. 	start_date	- Specify the start datetime variable.
+3.	end_date	- Specify the end datetime variable.
 4.	business_start	- The first hour of the business day (e.g. 9=9am).
 5.	business_end	- The last hour of the business day (e.g. 17=5pm)
 
@@ -92,10 +92,10 @@ Macro Usage:
 3. 	Call the total_work_hours macro and enter the input parameters.
 	e.g. 
 	%total_work_hours(
-	input_data		= work.library,
-	output_data		= total_hours,
-	start_date		= begin_timestamp,
-	end_date		= end_timestamp,
+	input_data	= work.library,
+	output_data	= total_hours,
+	start_date	= begin_timestamp,
+	end_date	= end_timestamp,
 	business_start	= 9,
 	business_end	= 17
 	);
@@ -239,18 +239,18 @@ run;
 
 /*Add times to ficticous complaint & closure dates*/
 data complaint_datetime;
-set complaint_dates;
-/*Create randomly generated times for complaints & closures*/
-complaint_timepart=rand("uniform",'09:00:00't, '12:00:00't);
-closure_timepart=rand("uniform",'12:00:00't, '17:00:00't);
-/*Join the date & times to a combined complaint datetime variable*/
-complaint_datetime=dhms(complaint_date,0,0,complaint_timepart);
-/*Join the date & times to a combined closure datetime variable*/
-closure_datetime=dhms(closure_date,0,0,closure_timepart);
-/*Reformat variables to datetime format*/
-format complaint_datetime closure_datetime datetime.;
-/*Drop variables not required for macro usage*/
-drop complaint_date closure_date complaint_timepart closure_timepart;
+	set complaint_dates;
+	/*Create randomly generated times for complaints & closures*/
+	complaint_timepart=rand("uniform",'09:00:00't, '12:00:00't);
+	closure_timepart=rand("uniform",'12:00:00't, '17:00:00't);
+	/*Join the date & times to a combined complaint datetime variable*/
+	complaint_datetime=dhms(complaint_date,0,0,complaint_timepart);
+	/*Join the date & times to a combined closure datetime variable*/
+	closure_datetime=dhms(closure_date,0,0,closure_timepart);
+	/*Reformat variables to datetime format*/
+	format complaint_datetime closure_datetime datetime.;
+	/*Drop variables not required for macro usage*/
+	drop complaint_date closure_date complaint_timepart closure_timepart;
 run;
 
 /************************************************************************************
@@ -324,10 +324,10 @@ Example 2: Macro Usage
 
 /*Call the macro and enter the input parameters*/
 %total_work_hours(
-input_data 		= reviewed,
-output_data		= total_hours_fincrime,
-start_date 		= flagged_date,
-end_date 		= reviewed_date,
+input_data 	= reviewed,
+output_data	= total_hours_fincrime,
+start_date 	= flagged_date,
+end_date 	= reviewed_date,
 business_start 	= 8,
 business_end 	= 16
 );
