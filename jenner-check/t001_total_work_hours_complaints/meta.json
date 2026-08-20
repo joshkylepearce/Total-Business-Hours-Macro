@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_total_work_hours_complaints",
+  "source_file": "Total Business Hours Macro.sas",
+  "source_blob_sha": "610196496aa8aaa1239b82f72a06c81500b96092",
+  "source_commit": "56bd5554366fa621ae1aacd600c37d9c5e382f23",
+  "notes": "Runs the repo's %total_work_hours macro (holiday setup + macro definition, unmodified) against the author's own Example 1 driver (fictitious complaint/closure datetimes). Added call streaminit(20240817) before the two rand() calls in the datetime-generation step so the bundle is reproducible; no other logic changed. Added a trailing proc print to surface the macro's output dataset."
+}

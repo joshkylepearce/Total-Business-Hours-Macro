@@ -1,0 +1,43 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA public_holidays
+
+NOTE: Processing inline DATALINES (36 lines)
+
+NOTE: Read 36 rows from DATALINES.
+NOTE: Wrote public_holidays (36 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable HOL = '01JAN2022'd,'02JAN2022'd,'06FEB2022'd,'15APR2022'd,'18APR2022'd,'25APR2022'd,'06JUN2022'd,'24JUN2022'd,'26SEP2022'd,'24OCT2022'd,'25DEC2022'd,'26DEC2022'd,'01JAN2023'd,'02JAN2023'd,'03JAN2023'd,'30JAN2023'd,'06FEB2023'd,'07APR2023'd,'10APR2023'd,'25APR2023'd,'05JUN2023'd,'14JUL2023'd,'23OCT2023'd,'25DEC2023'd,'26DEC2023'd,'01JAN2024'd,'02JAN2024'd,'06FEB2024'd,'29MAR2024'd,'01APR2024'd,'25APR2024'd,'03JUN2024'd,'28JUN2024'd,'28OCT2024'd,'25DEC2024'd,'26DEC2024'd
+NOTE: PROC SQL statement used.
+'01JAN2022'd,'02JAN2022'd,'06FEB2022'd,'15APR2022'd,'18APR2022'd,'25APR2022'd,'06JUN2022'd,'24JUN2022'd,'26SEP2022'd,'24OCT2022'd,'25DEC2022'd,'26DEC2022'd,'01JAN2023'd,'02JAN2023'd,'03JAN2023'd,'30JAN2023'd,'06FEB2023'd,'07APR2023'd,'10APR2023'd,'25APR2023'd,'05JUN2023'd,'14JUL2023'd,'23OCT2023'd,'25DEC2023'd,'26DEC2023'd,'01JAN2024'd,'02JAN2024'd,'06FEB2024'd,'29MAR2024'd,'01APR2024'd,'25APR2024'd,'03JUN2024'd,'28JUN2024'd,'28OCT2024'd,'25DEC2024'd,'26DEC2024'd
+NOTE: DATA complaint_dates
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote complaint_dates (10 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA complaint_datetime
+
+
+NOTE: Read 10 rows from complaint_dates.
+NOTE: Wrote complaint_datetime (10 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA total_hours_complaints
+
+
+NOTE: Read 10 rows from complaint_datetime.
+NOTE: Wrote total_hours_complaints (10 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=total_hours_complaints
+
+NOTE: PROC PRINT completed: 10 observations printed, 3 variables

@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-08-20T08:15:49Z",
+  "_captured_run_id": "r_068a14fef98e448b9e97f9a0cd7843be",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote public_holidays (36 rows, 1 columns).",
+    "NOTE: Wrote complaint_datetime (10 rows, 2 columns).",
+    "NOTE: Wrote total_hours_complaints (10 rows, 3 columns).",
+    "NOTE: PROC PRINT completed: 10 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
