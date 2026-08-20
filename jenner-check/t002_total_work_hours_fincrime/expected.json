@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-08-20T08:15:49Z",
+  "_captured_run_id": "r_53026103455d4967b847aaadcbb2bdad",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote flagged (20 rows, 1 columns).",
+    "NOTE: Wrote reviewed (20 rows, 2 columns).",
+    "NOTE: Wrote total_hours_fincrime (20 rows, 3 columns).",
+    "NOTE: PROC PRINT completed: 20 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
